@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		102D5C8118853E0E00E1BC76 /* MAUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 102D5C8018853E0E00E1BC76 /* MAUtility.m */; };
 		10BB238B1883B29A004FA24D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB238A1883B29A004FA24D /* Foundation.framework */; };
 		10BB238D1883B29A004FA24D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB238C1883B29A004FA24D /* CoreGraphics.framework */; };
 		10BB238F1883B29A004FA24D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB238E1883B29A004FA24D /* UIKit.framework */; };
@@ -27,7 +28,6 @@
 		10BB23C91883B76E004FA24D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB238E1883B29A004FA24D /* UIKit.framework */; };
 		10BB23CF1883B76E004FA24D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10BB23CD1883B76E004FA24D /* InfoPlist.strings */; };
 		10BB23D11883B76E004FA24D /* MyApp_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BB23D01883B76E004FA24D /* MyApp_Tests.m */; };
-		10BB23D91883B7A7004FA24D /* MATest1.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BB23D81883B7A7004FA24D /* MATest1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		102D5C7F18853E0E00E1BC76 /* MAUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAUtility.h; sourceTree = "<group>"; };
+		102D5C8018853E0E00E1BC76 /* MAUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAUtility.m; sourceTree = "<group>"; };
 		10BB23871883B29A004FA24D /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BB238A1883B29A004FA24D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		10BB238C1883B29A004FA24D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -73,7 +75,6 @@
 		10BB23CE1883B76E004FA24D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		10BB23D01883B76E004FA24D /* MyApp_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyApp_Tests.m; sourceTree = "<group>"; };
 		10BB23D21883B76E004FA24D /* MyApp Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyApp Tests-Prefix.pch"; sourceTree = "<group>"; };
-		10BB23D81883B7A7004FA24D /* MATest1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MATest1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +114,8 @@
 		10BB237E1883B29A004FA24D = {
 			isa = PBXGroup;
 			children = (
+				102D5C7F18853E0E00E1BC76 /* MAUtility.h */,
+				102D5C8018853E0E00E1BC76 /* MAUtility.m */,
 				10BB23901883B29A004FA24D /* MyApp */,
 				10BB23B21883B29B004FA24D /* MyAppTests */,
 				10BB23CA1883B76E004FA24D /* MyApp Tests */,
@@ -171,7 +174,6 @@
 		10BB23B21883B29B004FA24D /* MyAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				10BB23D81883B7A7004FA24D /* MATest1.m */,
 				10BB23B81883B29B004FA24D /* MyAppTests.m */,
 				10BB23B31883B29B004FA24D /* Supporting Files */,
 			);
@@ -335,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				102D5C8118853E0E00E1BC76 /* MAUtility.m in Sources */,
 				10BB239B1883B29A004FA24D /* MAAppDelegate.m in Sources */,
 				10BB23A41883B29A004FA24D /* MAViewController.m in Sources */,
 				10BB23971883B29A004FA24D /* main.m in Sources */,
@@ -346,7 +349,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				10BB23B91883B29B004FA24D /* MyAppTests.m in Sources */,
-				10BB23D91883B7A7004FA24D /* MATest1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,6 +622,7 @@
 				10BB23BE1883B29B004FA24D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10BB23BF1883B29B004FA24D /* Build configuration list for PBXNativeTarget "MyAppTests" */ = {
 			isa = XCConfigurationList;
@@ -628,6 +631,7 @@
 				10BB23C11883B29B004FA24D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10BB23D51883B76E004FA24D /* Build configuration list for PBXNativeTarget "MyApp Tests" */ = {
 			isa = XCConfigurationList;
@@ -636,6 +640,7 @@
 				10BB23D71883B76E004FA24D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "MAViewController.h"
+#import "MAUtility.h"
 
 @interface MAViewController ()
 
@@ -32,7 +33,7 @@
     UIAlertView *myalert = [[UIAlertView alloc]
                             initWithTitle:@"Caution" message:@"This is my first App" delegate:Nil cancelButtonTitle:@"calcel" otherButtonTitles:nil];
     [myalert show];
-    [name setText:@"Tim Shen"];
+    [name setText: [MAUtility getName]];
 }
 
 
