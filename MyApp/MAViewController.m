@@ -26,4 +26,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)showMessage
+{
+    UIAlertView *myalert = [[UIAlertView alloc]
+                            initWithTitle:@"Caution" message:@"This is my first App" delegate:Nil cancelButtonTitle:@"calcel" otherButtonTitles:nil];
+    [myalert show];
+    
+
+}
 @end

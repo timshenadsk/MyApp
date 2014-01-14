@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MAViewController : UIViewController
+-(IBAction)showMessage;
 
 @end
