@@ -14,6 +14,7 @@
 
 @implementation MAViewController
 
+@synthesize name;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -31,7 +32,8 @@
     UIAlertView *myalert = [[UIAlertView alloc]
                             initWithTitle:@"Caution" message:@"This is my first App" delegate:Nil cancelButtonTitle:@"calcel" otherButtonTitles:nil];
     [myalert show];
-    
-
+    [name setText:@"Tim Shen"];
 }
+
+
 @end

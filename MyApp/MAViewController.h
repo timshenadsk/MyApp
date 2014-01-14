@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface MAViewController : UIViewController
+{
+    UITextField *name;
+}
+
 -(IBAction)showMessage;
+
+@property(nonatomic,retain) IBOutlet UITextField *name;
 
 @end
