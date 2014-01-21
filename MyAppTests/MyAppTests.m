@@ -8,10 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
+
 @interface MyAppTests : XCTestCase
 
 @end
-
+#import "MAUtility.h"
 @implementation MyAppTests
 
 - (void)setUp
@@ -26,9 +27,18 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testGetName
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    //XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+   
+    XCTAssertEqualObjects([MAUtility getName] , @"hello tim", @"Test name is correct");
+}
+
+- (void)testGetAdress
+{
+    //XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    
+    XCTAssertNotEqualObjects([MAUtility getAdress] , @"NO. 399, pudian road", @"Test adress is correct");
 }
 
 @end

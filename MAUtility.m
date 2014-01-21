@@ -14,4 +14,8 @@
     return @"hello tim";
 }
 
++ (NSString *)getAdress{
+    return @"No. 399, pudian road";
+}
+
 @end

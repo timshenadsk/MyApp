@@ -14,4 +14,6 @@
 
 + (NSString *) getName;
 
++ (NSString *) getAdress;
+
 @end

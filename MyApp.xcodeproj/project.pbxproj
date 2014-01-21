@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		102D5C8118853E0E00E1BC76 /* MAUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 102D5C8018853E0E00E1BC76 /* MAUtility.m */; };
+		10334CB5188566F300C53D9D /* MATestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 10334CB4188566F300C53D9D /* MATestMain.m */; };
 		10BB238B1883B29A004FA24D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB238A1883B29A004FA24D /* Foundation.framework */; };
 		10BB238D1883B29A004FA24D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB238C1883B29A004FA24D /* CoreGraphics.framework */; };
 		10BB238F1883B29A004FA24D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB238E1883B29A004FA24D /* UIKit.framework */; };
@@ -26,8 +27,6 @@
 		10BB23C71883B76E004FA24D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB23AC1883B29B004FA24D /* XCTest.framework */; };
 		10BB23C81883B76E004FA24D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB238A1883B29A004FA24D /* Foundation.framework */; };
 		10BB23C91883B76E004FA24D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB238E1883B29A004FA24D /* UIKit.framework */; };
-		10BB23CF1883B76E004FA24D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10BB23CD1883B76E004FA24D /* InfoPlist.strings */; };
-		10BB23D11883B76E004FA24D /* MyApp_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BB23D01883B76E004FA24D /* MyApp_Tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +49,7 @@
 /* Begin PBXFileReference section */
 		102D5C7F18853E0E00E1BC76 /* MAUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAUtility.h; sourceTree = "<group>"; };
 		102D5C8018853E0E00E1BC76 /* MAUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAUtility.m; sourceTree = "<group>"; };
+		10334CB4188566F300C53D9D /* MATestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MATestMain.m; sourceTree = "<group>"; };
 		10BB23871883B29A004FA24D /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BB238A1883B29A004FA24D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		10BB238C1883B29A004FA24D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -71,10 +71,6 @@
 		10BB23B61883B29B004FA24D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		10BB23B81883B29B004FA24D /* MyAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAppTests.m; sourceTree = "<group>"; };
 		10BB23C61883B76E004FA24D /* MyApp Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyApp Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		10BB23CC1883B76E004FA24D /* MyApp Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyApp Tests-Info.plist"; sourceTree = "<group>"; };
-		10BB23CE1883B76E004FA24D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		10BB23D01883B76E004FA24D /* MyApp_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyApp_Tests.m; sourceTree = "<group>"; };
-		10BB23D21883B76E004FA24D /* MyApp Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyApp Tests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +114,6 @@
 				102D5C8018853E0E00E1BC76 /* MAUtility.m */,
 				10BB23901883B29A004FA24D /* MyApp */,
 				10BB23B21883B29B004FA24D /* MyAppTests */,
-				10BB23CA1883B76E004FA24D /* MyApp Tests */,
 				10BB23891883B29A004FA24D /* Frameworks */,
 				10BB23881883B29A004FA24D /* Products */,
 			);
@@ -176,6 +171,7 @@
 			children = (
 				10BB23B81883B29B004FA24D /* MyAppTests.m */,
 				10BB23B31883B29B004FA24D /* Supporting Files */,
+				10334CB4188566F300C53D9D /* MATestMain.m */,
 			);
 			path = MyAppTests;
 			sourceTree = "<group>";
@@ -185,25 +181,6 @@
 			children = (
 				10BB23B41883B29B004FA24D /* MyAppTests-Info.plist */,
 				10BB23B51883B29B004FA24D /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		10BB23CA1883B76E004FA24D /* MyApp Tests */ = {
-			isa = PBXGroup;
-			children = (
-				10BB23D01883B76E004FA24D /* MyApp_Tests.m */,
-				10BB23CB1883B76E004FA24D /* Supporting Files */,
-			);
-			path = "MyApp Tests";
-			sourceTree = "<group>";
-		};
-		10BB23CB1883B76E004FA24D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				10BB23CC1883B76E004FA24D /* MyApp Tests-Info.plist */,
-				10BB23CD1883B76E004FA24D /* InfoPlist.strings */,
-				10BB23D21883B76E004FA24D /* MyApp Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -326,7 +303,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10BB23CF1883B76E004FA24D /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10334CB5188566F300C53D9D /* MATestMain.m in Sources */,
 				10BB23B91883B29B004FA24D /* MyAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,7 +333,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10BB23D11883B76E004FA24D /* MyApp_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,14 +380,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				10BB23B61883B29B004FA24D /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		10BB23CD1883B76E004FA24D /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				10BB23CE1883B76E004FA24D /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -524,6 +492,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyApp.app/MyApp";
+				CODE_SIGN_IDENTITY = test_tim;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -547,6 +516,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyApp.app/MyApp";
+				CODE_SIGN_IDENTITY = test_tim;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
