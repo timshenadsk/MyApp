@@ -17,5 +17,5 @@
 + (NSString *)getAdress{
     return @"No. 399, pudian road";
 }
-//test
+//tes
 @end
